@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/androzo/semantic-release/compare/v1.1.0...v1.1.1) (2025-04-11)
+
+
+### Bug Fixes
+
+* config rules ([d5bcf0d](https://github.com/androzo/semantic-release/commit/d5bcf0d4cb67d5ee66bd19d8652e379282d4e7f5))
+
 # [1.1.0](https://github.com/androzo/semantic-release/compare/v1.0.0...v1.1.0) (2025-04-11)
 
 
