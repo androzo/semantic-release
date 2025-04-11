@@ -22,7 +22,7 @@ jobs:
         run: npm install --save-dev semantic-release @semantic-release/changelog @semantic-release/git @semantic-release/github
       
       - name: Install dependencies
-        run: npm init -y && npm set name ${{ github.event.repository.name }}
+        run: npm init -y
         
       - name: Run semantic-release
         env:
