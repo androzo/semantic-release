@@ -15,11 +15,14 @@ runs:
 
       - name: Install dependencies
         run: npm install --save-dev semantic-release @semantic-release/changelog @semantic-release/git @semantic-release/github
+        shell: bash
       
       - name: Install dependencies
         run: npm init -y
+        shell: bash
         
       - name: Run semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.TOKEN_DO_GITHUB }}
         run: npx semantic-release
+        shell: bash
