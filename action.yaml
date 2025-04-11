@@ -18,7 +18,7 @@ runs:
         shell: bash
       
       - name: Install dependencies
-        run: npm init -y
+        run: npm init -y > /dev/null
         shell: bash
         
       - name: Run semantic-release
