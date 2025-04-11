@@ -1,3 +1,12 @@
+## [1.1.2](https://github.com/androzo/semantic-release/compare/v1.1.1...v1.1.2) (2025-04-11)
+
+
+### Bug Fixes
+
+* sasdas ([e4aef9e](https://github.com/androzo/semantic-release/commit/e4aef9ef2a04e86847cff9e159b89103be89e2dc))
+* somenthing ([8f20957](https://github.com/androzo/semantic-release/commit/8f209575ddbd0c17ecc4d59784fb0ef58ebb86fb))
+* this and that ([eccc4cc](https://github.com/androzo/semantic-release/commit/eccc4cc5375265b73898b7485c33076460008714))
+
 ## [1.1.1](https://github.com/androzo/semantic-release/compare/v1.1.0...v1.1.1) (2025-04-11)
 
 
