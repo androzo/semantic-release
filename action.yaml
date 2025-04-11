@@ -22,7 +22,5 @@ runs:
         shell: bash
         
       - name: Run semantic-release
-        env:
-          GITHUB_TOKEN: ${{ secrets.TOKEN_DO_GITHUB }}
         run: npx semantic-release
         shell: bash
