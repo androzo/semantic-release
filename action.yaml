@@ -5,36 +5,22 @@ author: André Buchmann
 runs:
   using: "composite"
   steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-    - name: Create temporary folder
-      run: |
-        temp_dir=$(mktemp -d)
-        echo "TEMP_DIR=$temp_dir" >> $GITHUB_ENV
-        cd $temp_dir
-      shell: bash
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '20'
 
-    - name: Set up Node.js
-      uses: actions/setup-node@v2
-      with:
-        node-version: '20'
-
-    - name: Install dependencies
-      run: |
-        cp "${{ github.action_path }}/.releaserc.json" $TEMP_DIR
-        cd $TEMP_DIR
-        npm install --save-dev semantic-release @semantic-release/changelog @semantic-release/git @semantic-release/github
-      shell: bash
-
-    - name: Initialize npm project
-      run: |
-        cd $TEMP_DIR
-        npm init -y > /dev/null
-      shell: bash
-
-    - name: Run semantic-release
-      run: |
-        cd $TEMP_DIR
-        npx semantic-release
-      shell: bash
+      - name: Install dependencies
+        run: npm install --save-dev semantic-release @semantic-release/changelog @semantic-release/git @semantic-release/github
+        shell: bash
+      
+      - name: Install dependencies
+        run: npm init -y > /dev/null
+        shell: bash
+        
+      - name: Run semantic-release
+        run: npx semantic-release
+        shell: bash
